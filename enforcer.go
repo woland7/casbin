@@ -584,7 +584,7 @@ func (e *Enforcer) enforce(matcher string, explains *[]string, rvals ...interfac
 	if !e.enabled {
 		return true, nil
 	}
-
+	fmt.Println("LERAAA")
 	functions := e.fm.GetFunctions()
 	if _, ok := e.model["g"]; ok {
 		for key, ast := range e.model["g"] {
